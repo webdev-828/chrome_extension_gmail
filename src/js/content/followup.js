@@ -13,6 +13,6 @@ module.exports = {
     },
 
     renderHTML() {
-        return "<div id='myDropdown' class='dropdown-content' style='top:-178px; width:200px'><a href='#'>Once per day</a><a href='#'>Once every two days</a><a href='#'>Once every three days</a><a href='#'>Once per week</a></div><button class='dropbtn'>Followup</button>";
+        return "<div id='myDropdown' class='dropdown-content' style='top:-178px; width:200px'><a href='#onceperday'>Once per day</a><a href='#onceeverytwodays'>Once every two days</a><a href='#onceeverythreedays'>Once every three days</a><a href='#onceperweek'>Once per week</a></div><button class='dropbtn'>Followup</button>";
     },
 }
