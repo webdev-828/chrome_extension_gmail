@@ -29,6 +29,13 @@ Each page has its own assets package defined. So, to code on popup you must star
 
 You must use the [ES6 modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) to a better code organization. The boilerplate is already prepared to that and here you have a little example.
 
+## InboxSDK
+The InboxSDK is a library for building browser extensions for Gmail and soon Inbox too. It provides APIs for browser extensions to interact with and extend the Gmail and Inbox UI. The SDK is built so that multiple extensions can use it on a page at once without conflicting with each other.
+
+The library is intended to facilitate the creation of extensions like our Streak extension. The library is sophisticated enough for the Streak extension itself to be built on, but the library does not provide facilities for other extensions to interact with user data specific to the Streak extension (pipelines, boxes, etc.). To integrate with Streak itself, see the Streak API docs.
+
+InboxSDK's support for Gmail is mature and proven in extensions used by millions of users. We're still developing our support for Google Inbox, and developers can opt in early to try out the InboxSDK in Inbox.
+
 ## Followup.js
 There are all followup elements, and you can import followup.js file into content_script.js.
 And it can be reused, for another component under the gmail default control bar.
