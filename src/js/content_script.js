@@ -1,8 +1,8 @@
 import "../css/content.css";
-import * as followup from "./content/followup.js";
+import * as followup from "./content/followup.js"; //Import Followup Bar dyanmically
 
 var content = {
-    init: function() {
+    init: function() { // Init Content Script for InboxSDK.
         window.onclick = function(event) {
                 if (!event.target.matches('.dropbtn')) {
                     var dropdowns = document.getElementsByClassName("dropdown-content");
