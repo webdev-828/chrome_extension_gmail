@@ -1,2 +1,2 @@
 import "../css/options.css";
-import "../js/option/index";
+import option from "../js/option/index";
