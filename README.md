@@ -29,6 +29,13 @@ Each page has its own assets package defined. So, to code on popup you must star
 
 You must use the [ES6 modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) to a better code organization. The boilerplate is already prepared to that and here you have a little example.
 
+## Followup.js
+There are all followup elements, and you can import followup.js file into content_script.js.
+And it can be reused, for another component under the gmail default control bar.
+For example you are going to add schedule component, you can create new js file named schedule.js.
+And in content_script.js, please add `import * as schedule from "./content/schedule.js"`, you can insert `statusBarView.el.appendChild(schedule.create())`.
+In schedule.js file, you should make `create()` function. Then you can easily use schedule component.
+
 ## Webpack auto-reload and HRM
 To make your workflow much more efficient this boilerplate uses the [webpack server](https://webpack.github.io/docs/webpack-dev-server.html) to development (started with `npm run server`) with auto reload feature that reloads the browser automatically every time that you save some file o your editor.
 
